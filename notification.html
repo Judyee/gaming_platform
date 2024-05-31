@@ -21,11 +21,13 @@
 <body>
     <!-- 頁首 start -->
     <div>
-        <nav class="row navbar-brand border-opacity-10 my-header">
+        <nav class="row navbar-brand border-opacity-10 my-header"
+            style="background: linear-gradient(to top, #fec7ff, #cc7edd, #8c56c5);">
             <a href="./index.html" class="col-sm-2">
-                <img src="image/logo-hb.png" alt="" class="my-logo" style="margin-left: 3rem;">
+                <img src="image/logo-hw.png" alt="" class="my-logo" style="margin-left: 3rem;">
             </a>
-            <ul class="col-sm-8 d-flex list-group-numbered align-self-center text-center fs-5">
+            <ul class="col-sm-8 d-flex list-group-numbered align-self-center text-center fs-5"
+                style="margin: 0; color: #fff;">
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item">訂閱</a></li>
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item">類別</a></li>
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item">排行榜</a></li>
@@ -34,17 +36,29 @@
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item"></a></li>
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item"></a></li>
             </ul>
-            <ul class="col-sm-2 d-flex list-group-numbered align-self-center text-center fs-4">
+            <ul class="col-sm-2 d-flex list-group-numbered align-self-center text-center fs-4"
+                style="margin: 0; color: #fff;">
                 <li class="flex-fill"><a href="" class="list-group-item-action"><i class="bi bi-search"></i></a></li>
-                <li class="flex-fill"><a href="./login.html" class="list-group-item-action"><i class="bi bi-person-circle"></i></a></li>
+                <li class="flex-fill"><a href="./login.html" class="list-group-item-action"><i
+                            class="bi bi-person-circle"></i></a></li>
                 <li class="flex-fill"><a href="" class="list-group-item-action"><i class="bi bi-cart-plus"></i></a></li>
             </ul>
         </nav>
     </div>
     <!-- 頁首 end -->
-    <!-- 主要內容 start -->
+    <!-- 麵包屑 breadcrumb start ordered list 有序列表-->
     <div class="container-fluid overflow-x-auto" style="padding-top: 4rem;">
-        <div class="row mx-5 mt-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mt-5 mx-5">
+                <li class="breadcrumb-item"><a class="text-decoration-none" href="./index.html">首頁</a></li>
+                <li class="breadcrumb-item">帳戶</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- 麵包屑 breadcrumb end -->
+    <!-- 主要內容 start -->
+    <div class="container-fluid overflow-x-auto">
+        <div class="row mx-5">
             <div class="col">
                 <h1>Judyee 的帳戶</h1>
                 <hr>
@@ -55,7 +69,7 @@
                 <div>
                     <div class="d-flex flex-column">
                         <div class="mb-3">
-                            <a href="./accountSet.html" class="text-decoration-none">帳戶詳細資料</a>
+                            <a href="./account_set.html" class="text-decoration-none">帳戶詳細資料</a>
                         </div>
                         <div class="mb-3">
                             <a href="./preferences.html" class="text-decoration-none">偏好設定</a>
@@ -75,7 +89,7 @@
                     </div>
                     <div class="d-flex flex-column">
                         <div class="mb-3 form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="friendRequestSwitch">
+                            <input class="form-check-input" type="checkbox" id="friendRequestSwitch" checked>
                             <label class="form-check-label" for="friendRequestSwitch">收到了好友邀請</label>
                         </div>
                         <div class="mb-3 form-check form-switch">
@@ -130,8 +144,7 @@
             $(".my-header").css({
                 "background-color": value ? `rgb(172, 172, 172, 0.76)` : `rgb(52, 58, 64, 0)`,
                 "height": value ? "60px" : "80px",
-                "backdrop-filter": value ? "blur(5px)" : "blur(0px)",
-                "color": value ? "white" : "black"
+                "backdrop-filter": value ? "blur(5px)" : "blur(0px)"
             })
         }) 
     </script>

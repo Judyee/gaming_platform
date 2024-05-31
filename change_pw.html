@@ -15,17 +15,19 @@
     <script src="jquery/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>帳戶設定</title>
+    <title>變更密碼</title>
 </head>
 
 <body>
     <!-- 頁首 start -->
     <div>
-        <nav class="row navbar-brand border-opacity-10 my-header">
+        <nav class="row navbar-brand border-opacity-10 my-header"
+            style="background: linear-gradient(to top, #fec7ff, #cc7edd, #8c56c5);">
             <a href="./index.html" class="col-sm-2">
-                <img src="image/logo-hb.png" alt="" class="my-logo" style="margin-left: 3rem;">
+                <img src="image/logo-hw.png" alt="" class="my-logo" style="margin-left: 3rem;">
             </a>
-            <ul class="col-sm-8 d-flex list-group-numbered align-self-center text-center fs-5">
+            <ul class="col-sm-8 d-flex list-group-numbered align-self-center text-center fs-5"
+                style="margin: 0; color: #fff;">
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item">訂閱</a></li>
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item">類別</a></li>
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item">排行榜</a></li>
@@ -34,7 +36,8 @@
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item"></a></li>
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item"></a></li>
             </ul>
-            <ul class="col-sm-2 d-flex list-group-numbered align-self-center text-center fs-4">
+            <ul class="col-sm-2 d-flex list-group-numbered align-self-center text-center fs-4"
+                style="margin: 0; color: #fff;">
                 <li class="flex-fill"><a href="" class="list-group-item-action"><i class="bi bi-search"></i></a></li>
                 <li class="flex-fill"><a href="./login.html" class="list-group-item-action"><i class="bi bi-person-circle"></i></a></li>
                 <li class="flex-fill"><a href="" class="list-group-item-action"><i class="bi bi-cart-plus"></i></a></li>
@@ -42,9 +45,19 @@
         </nav>
     </div>
     <!-- 頁首 end -->
-    <!-- 主要內容 start -->
+    <!-- 麵包屑 breadcrumb start ordered list 有序列表-->
     <div class="container-fluid overflow-x-auto" style="padding-top: 4rem;">
-        <div class="row mx-5 mt-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mt-5 mx-5">
+                <li class="breadcrumb-item"><a class="text-decoration-none" href="./index.html">首頁</a></li>
+                <li class="breadcrumb-item">帳戶</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- 麵包屑 breadcrumb end -->
+    <!-- 主要內容 start -->
+    <div class="container-fluid overflow-x-auto">
+        <div class="row mx-5">
             <div class="col">
                 <h1>Judyee 的帳戶</h1>
                 <hr>
@@ -55,7 +68,7 @@
                 <div>
                     <div class="d-flex flex-column">
                         <div class="mb-3">
-                            <a href="./accountSet.html" class="text-decoration-none">帳戶詳細資料</a>
+                            <a href="./account_set.html" class="text-decoration-none">帳戶詳細資料</a>
                         </div>
                         <div class="mb-3">
                             <a href="./preferences.html" class="text-decoration-none">偏好設定</a>
@@ -67,48 +80,24 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <div>
                     <div class="mb-3">
-                        <label class="fs-4" for="">商店及購買紀錄</label>
+                        <label class="fs-4" for="">變更密碼</label>
                         <hr class="mt-1">
-                        <div class="d-flex row">
-                            <div class="col-md-6 flex-column">
-                                <div class="justify-content-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
-                                        <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
-                                        <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5"/>
-                                      </svg>
-                                    <label for="">以8964結尾的visa</label>
-                                    <button class="btn btn-outline-secondary btn-sm text-end">編輯</button>
-                                    <button class="btn btn-outline-secondary btn-sm text-end">移除</button>
-                                </div>
-                                <br>
-                                <button class="btn btn-auto text-start mb-1 btn-primary">新增付款方式</button>
+                        <form id="PwdChangeForm" method="post">
+                            <div class="mb-3">
+                                <label class="form-label fs-6" for="">請輸入舊密碼</label>
+                                <input class="form-control w-50" type="text" name="" id="">
+                                <label class="form-label fs-6" for="">選擇新密碼</label>
+                                <input class="form-control w-50" type="text" name="" id="">
+                                <label class="form-label fs-6" for="">確認新密碼</label>
+                                <input class="form-control w-50" type="text" name="" id="">
                             </div>
-                            <div class="d-flex flex-column col-md-6">
-                                <a href=""><button class="btn btn-auto text-start mb-1 btn-primary">購買訂閱</button></a>
-                                <a href=""><button class="btn btn-auto text-start mb-1 btn-primary">檢視購買紀錄</button></a>
-                                <a href="./preferences.html"><button class="btn btn-auto mb-1 btn-primary">更新商店偏好設定</button></a>
+                            <div class="mb-3">
+                                <!-- 如果密碼驗證失誤，顯示密碼錯誤
+                                如果密碼驗證成功，讓使用者登出要求重新登入&把舊的密碼刪除&新的密碼寫入SQL -->
+                                <button type="button" class="btn btn-primary" onclick="changePwd()">確認變更</button>
                             </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="mb-3">
-                        <label class="fs-4" for="">聯絡資訊</label>
-                        <hr class="mt-1">
-                        <label for="" class="mb-1">電子郵件地址:(註冊時的信箱)</label>
-                        <br>
-                        <button class="btn btn-auto text-start mb-1 btn-primary">變更電子郵件地址</button>
-                    </div>
-                    <br>
-                    <div class="mb-3">
-                        <label class="fs-4" for="">帳戶安全</label>
-                        <hr class="mt-1">
-                        <a href="#"><button class="btn btn-auto text-start mb-1 btn-primary">變更密碼</button></a>
-                    </div>
-                    <br>
-                    <div class="mb-3">
-                        <button class="btn btn-danger">刪除帳號</button>
+                        </form>
                     </div>
                     <br>
                 </div>
@@ -157,10 +146,14 @@
             $(".my-header").css({
                 "background-color": value ? `rgb(172, 172, 172, 0.76)` : `rgb(52, 58, 64, 0)`,
                 "height": value ? "60px" : "80px",
-                "backdrop-filter": value ? "blur(5px)" : "blur(0px)",
-                "color": value ? "white" : "black"
+                "backdrop-filter": value ? "blur(5px)" : "blur(0px)"
             })
         }) 
+
+        function changePwd(){
+            alert("密碼已變更，請重新登入!");
+            window.location.href = './login.html';
+        }
     </script>
 </body>
 

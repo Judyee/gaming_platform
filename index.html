@@ -13,11 +13,11 @@
 <body>
     <!-- 頁首  start -->
     <div>
-        <nav class="row navbar-brand border-opacity-10 my-header">
+        <nav class="row navbar-brand border-opacity-10 my-header" style="background: linear-gradient(to top, #fec7ff, #cc7edd, #8c56c5);">
             <a href="#" class="col-sm-2">
-                <img src="image/logo-hb.png" alt="" class="my-logo" style="margin-left: 3rem;">
+                <img src="image/logo-hw.png" alt="" class="my-logo" style="margin-left: 3rem;">
             </a>
-            <ul class="col-sm-8 d-flex list-group-numbered align-self-center text-center fs-5">
+            <ul class="col-sm-8 d-flex list-group-numbered align-self-center text-center fs-5" style="margin: 0; color: #fff;">
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item">訂閱</a></li>
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item">類別</a></li>
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item">排行榜</a></li>
@@ -26,7 +26,7 @@
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item"></a></li>
                 <li class="flex-fill"><a href="" class="list-group-item-action list-group-item"></a></li>
             </ul>
-            <ul class="col-sm-2 d-flex list-group-numbered align-self-center text-center fs-4">
+            <ul class="col-sm-2 d-flex list-group-numbered align-self-center text-center fs-4" style="margin: 0; color: #fff;">
                 <li class="flex-fill"><a href="" class="list-group-item-action"><i class="bi bi-search"></i></a></li>
                 <li class="flex-fill"><a href="./login.html" class="list-group-item-action"><i class="bi bi-person-circle"></i></a></li>
                 <li class="flex-fill"><a href="" class="list-group-item-action"><i class="bi bi-cart-plus"></i></a></li>
@@ -125,8 +125,7 @@
             $(".my-header").css({
                 "background-color": value ? `rgb(172, 172, 172, 0.76)` : `rgb(52, 58, 64, 0)`,
                 "height": value ? "60px" : "80px",
-                "backdrop-filter": value ? "blur(5px)" : "blur(0px)",
-                "color": value ? "white" : "black"
+                "backdrop-filter": value ? "blur(5px)" : "blur(0px)"
             })
         }) 
     </script>
